@@ -1,0 +1,1280 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>All of Us Are Dead</title>
+  <link rel="shortcut icon" href="pvc.2.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bitter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Creepster&family=Domine:wght@400;500;600;700&family=Dongle:wght@300;400;700&family=Fredericka+the+Great&family=Fredoka:wght@300;400;500;600&family=Hind+Siliguri:wght@300;400;500;600;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600&family=Nanum+Gothic:wght@400;700;800&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Permanent+Marker&family=Quicksand:wght@300;400;500;600;700&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tapestry&family=Teko:wght@300;400;500;600;700&family=Work+Sans:ital,wght@0,900;1,800;1,900&family=Zilla+Slab:wght@300&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="jquery-animate-css-rotate-scale.js"></script>
+  <script>history.scrollRestoration = "manual"</script>
+
+  <script>
+   $(document).ready(function(){
+
+  $('#menu_popup_left li:nth-child(1)').click(function(){
+	$('body,html').animate({scrollTop:$('#content_wrap').offset().top },500)
+  })
+  $('#menu_popup_left li:nth-child(2)').click(function(){
+	$('body,html').animate({scrollTop:$('#infection').offset().top },500)
+  })
+  $('#menu_popup_left li:nth-child(3)').click(function(){
+	$('body,html').animate({scrollTop:$('#characters').offset().top },500)
+  })
+  $('#menu_popup_left li:nth-child(4)').click(function(){
+	$('body,html').animate({scrollTop:$('#joodongeun').offset().top },500)
+})
+  $('#menu_popup_left li:nth-child(5)').click(function(){
+	$('body,html').animate({scrollTop:$('#webtoon').offset().top },500)
+ })
+    //// webtoon 슬라이드 /////////////////
+
+
+    webtoon_num = 1;
+    $('#webtoon_slide_rightbtn').click(function(){      
+      if( webtoon_num == 1 ){ 
+        webtoon_num = 2
+        $('#webtoon_slide>li:nth-child(1)').css({'left':'490px','z-index':'999'})
+        $('#webtoon_slide>li:nth-child(2)').css({'left':'900px','z-index':'500'})
+        $('#webtoon_slide>li:nth-child(3)').css({'left':'90px','z-index':'500'})
+        $('#webtoon_slide>li:nth-child(1) img').css({'transform':'rotateY(0deg) scale(1)'})
+        $('#webtoon_slide>li:nth-child(2) img').css({'transform':'rotateY(20deg) scale(0.8)'})
+        $('#webtoon_slide>li:nth-child(3) img').css({'transform':'rotateY(-20deg) scale(0.8)'})
+        $('#webtoon_slide_textbox h3').text('ALL OF US ARE DEAD 2')
+        $('#webtoon_slide_textbox p').text('the first episode 2')
+        $('#webtoon_slide_bt li').eq(2-1).css({'background-color':'#fff','width':'30px'}).siblings().css({'background-color':'transparent','width':'12px'})
+      }
+      else if( webtoon_num == 2 ){
+        webtoon_num = 3
+        $('#webtoon_slide>li:nth-child(1)').css({'left':'900px','z-index':'500'})
+        $('#webtoon_slide>li:nth-child(2)').css({'left':'90px','z-index':'500'})
+        $('#webtoon_slide>li:nth-child(3)').css({'left':'490px','z-index':'999'})
+        $('#webtoon_slide>li:nth-child(1) img').css({'transform':'rotateY(20deg) scale(0.8)'})
+        $('#webtoon_slide>li:nth-child(2) img').css({'transform':'rotateY(-20deg) scale(0.8)'})
+        $('#webtoon_slide>li:nth-child(3) img').css({'transform':'rotateY(0deg) scale(1)'})
+        $('#webtoon_slide_textbox h3').text('ALL OF US ARE DEAD 3')
+        $('#webtoon_slide_textbox p').text('the first episode 3')
+        $('#webtoon_slide_bt li').eq(3-1).css({'background-color':'#fff','width':'30px'}).siblings().css({'background-color':'transparent','width':'12px'})
+      }
+      else if( webtoon_num == 3 ){
+        webtoon_num = 1
+        $('#webtoon_slide>li:nth-child(1)').css({'left':'90px','z-index':'500'})
+        $('#webtoon_slide>li:nth-child(2)').css({'left':'490px','z-index':'999'})
+        $('#webtoon_slide>li:nth-child(3)').css({'left':'900px','z-index':'500'})
+        $('#webtoon_slide>li:nth-child(1) img').css({'transform':'rotateY(-20deg) scale(0.8)'})
+        $('#webtoon_slide>li:nth-child(2) img').css({'transform':'rotateY(0deg) scale(1)'})
+        $('#webtoon_slide>li:nth-child(3) img').css({'transform':'rotateY(20deg) scale(0.8)'})
+        $('#webtoon_slide_textbox h3').text('ALL OF US ARE DEAD 1')
+        $('#webtoon_slide_textbox p').text('the first episode 1')
+        $('#webtoon_slide_bt li').eq(1-1).css({'background-color':'#fff','width':'30px'}).siblings().css({'background-color':'transparent','width':'12px'})
+      }
+    })
+    $('#webtoon_slide_leftbtn').click(function(){      
+      if( webtoon_num == 1 ){ 
+        webtoon_num = 3
+        $('#webtoon_slide>li:nth-child(1)').css({'left':'900px','z-index':'500'})
+        $('#webtoon_slide>li:nth-child(2)').css({'left':'90px','z-index':'500'})
+        $('#webtoon_slide>li:nth-child(3)').css({'left':'490px','z-index':'999'})
+        $('#webtoon_slide>li:nth-child(1) img').css({'transform':'rotateY(20deg) scale(0.8)'})
+        $('#webtoon_slide>li:nth-child(2) img').css({'transform':'rotateY(-20deg) scale(0.8)'})
+        $('#webtoon_slide>li:nth-child(3) img').css({'transform':'rotateY(0deg) scale(1)'})
+        $('#webtoon_slide_textbox h3').text('ALL OF US ARE DEAD 3')
+        $('#webtoon_slide_textbox p').text('the first episode 3')
+        $('#webtoon_slide_bt li').eq(3-1).css({'background-color':'#fff','width':'30px'}).siblings().css({'background-color':'transparent','width':'12px'})
+       
+      }
+      else if( webtoon_num == 2 ){
+        webtoon_num = 1
+        $('#webtoon_slide>li:nth-child(1)').css({'left':'90px','z-index':'500'})
+        $('#webtoon_slide>li:nth-child(2)').css({'left':'490px','z-index':'999'})
+        $('#webtoon_slide>li:nth-child(3)').css({'left':'900px','z-index':'500'})
+        $('#webtoon_slide>li:nth-child(1) img').css({'transform':'rotateY(-20deg) scale(0.8)'})
+        $('#webtoon_slide>li:nth-child(2) img').css({'transform':'rotateY(0deg) scale(1)'})
+        $('#webtoon_slide>li:nth-child(3) img').css({'transform':'rotateY(20deg) scale(0.8)'})
+        $('#webtoon_slide_textbox h3').text('ALL OF US ARE DEAD 1')
+        $('#webtoon_slide_textbox p').text('the first episode 1')
+        $('#webtoon_slide_bt li').eq(1-1).css({'background-color':'#fff','width':'30px'}).siblings().css({'background-color':'transparent','width':'12px'})
+      }
+      else if( webtoon_num == 3 ){
+        webtoon_num = 2
+        $('#webtoon_slide>li:nth-child(1)').css({'left':'490px','z-index':'999'})
+        $('#webtoon_slide>li:nth-child(2)').css({'left':'900px','z-index':'500'})
+        $('#webtoon_slide>li:nth-child(3)').css({'left':'90px','z-index':'500'})
+        $('#webtoon_slide>li:nth-child(1) img').css({'transform':'rotateY(0deg) scale(1)'})
+        $('#webtoon_slide>li:nth-child(2) img').css({'transform':'rotateY(20deg) scale(0.8)'})
+        $('#webtoon_slide>li:nth-child(3) img').css({'transform':'rotateY(-20deg) scale(0.8)'})
+        $('#webtoon_slide_textbox h3').text('ALL OF US ARE DEAD 2')
+        $('#webtoon_slide_textbox p').text('the first episode 2')
+        $('#webtoon_slide_bt li').eq(2-1).css({'background-color':'#fff','width':'30px'}).siblings().css({'background-color':'transparent','width':'12px'})
+      }
+    })
+
+    $('#webtoon_slide_bt li:nth-child(1)').click(function(){
+        webtoon_num = 1
+        $('#webtoon_slide>li:nth-child(1)').css({'left':'90px','z-index':'500'})
+        $('#webtoon_slide>li:nth-child(2)').css({'left':'490px','z-index':'999'})
+        $('#webtoon_slide>li:nth-child(3)').css({'left':'900px','z-index':'500'})
+        $('#webtoon_slide>li:nth-child(1) img').css({'transform':'rotateY(-20deg) scale(0.8)'})
+        $('#webtoon_slide>li:nth-child(2) img').css({'transform':'rotateY(0deg) scale(1)'})
+        $('#webtoon_slide>li:nth-child(3) img').css({'transform':'rotateY(20deg) scale(0.8)'})
+        $('#webtoon_slide_textbox h3').text('ALL OF US ARE DEAD 1')
+        $('#webtoon_slide_textbox p').text('the first episode 1')
+        $('#webtoon_slide_bt li').eq(1-1).css({'background-color':'#fff','width':'30px'}).siblings().css({'background-color':'transparent','width':'12px'})
+    })
+    $('#webtoon_slide_bt li:nth-child(2)').click(function(){
+      webtoon_num = 2
+        $('#webtoon_slide>li:nth-child(1)').css({'left':'490px','z-index':'999'})
+        $('#webtoon_slide>li:nth-child(2)').css({'left':'900px','z-index':'500'})
+        $('#webtoon_slide>li:nth-child(3)').css({'left':'90px','z-index':'500'})
+        $('#webtoon_slide>li:nth-child(1) img').css({'transform':'rotateY(0deg) scale(1)'})
+        $('#webtoon_slide>li:nth-child(2) img').css({'transform':'rotateY(20deg) scale(0.8)'})
+        $('#webtoon_slide>li:nth-child(3) img').css({'transform':'rotateY(-20deg) scale(0.8)'})
+        $('#webtoon_slide_textbox h3').text('ALL OF US ARE DEAD 2')
+        $('#webtoon_slide_textbox p').text('the first episode 2')
+        $('#webtoon_slide_bt li').eq(2-1).css({'background-color':'#fff','width':'30px'}).siblings().css({'background-color':'transparent','width':'12px'})
+    })
+    $('#webtoon_slide_bt li:nth-child(3)').click(function(){
+      webtoon_num = 3
+        $('#webtoon_slide>li:nth-child(1)').css({'left':'900px','z-index':'500'})
+        $('#webtoon_slide>li:nth-child(2)').css({'left':'90px','z-index':'500'})
+        $('#webtoon_slide>li:nth-child(3)').css({'left':'490px','z-index':'999'})
+        $('#webtoon_slide>li:nth-child(1) img').css({'transform':'rotateY(20deg) scale(0.8)'})
+        $('#webtoon_slide>li:nth-child(2) img').css({'transform':'rotateY(-20deg) scale(0.8)'})
+        $('#webtoon_slide>li:nth-child(3) img').css({'transform':'rotateY(0deg) scale(1)'})
+        $('#webtoon_slide_textbox h3').text('ALL OF US ARE DEAD 3')
+        $('#webtoon_slide_textbox p').text('the first episode 3')
+        $('#webtoon_slide_bt li').eq(3-1).css({'background-color':'#fff','width':'30px'}).siblings().css({'background-color':'transparent','width':'12px'})
+    })
+    ///////////////////
+   ///////////////////
+
+   window.onload = function () {		
+    
+    $(".page").each(function () {
+        // 개별적으로 Wheel 이벤트 적용
+        $(this).on("mousewheel DOMMouseScroll", function (e) {
+            e.preventDefault();
+            var delta = 0;
+            if (!event) event = window.event;
+            if (event.wheelDelta) {
+                delta = event.wheelDelta / 120;
+                if (window.opera) delta = -delta;
+            } else if (event.detail) delta = -event.detail / 3;
+            var moveTop = null;
+            // 마우스휠을 위에서 아래로
+            if (delta < 0) {
+                if ($(this).next() != undefined) {
+                   
+                   moveTop = $(this).next().offset().top;		
+      //count = $(this).index()+1; // 1 2 3							
+                }
+            // 마우스휠을 아래에서 위로
+            } else {
+                if ($(this).prev() != undefined) {
+                   moveTop = $(this).prev().offset().top;
+      //count = $(this).prev().index(); // 1 2 3		
+                }
+            }
+            // 화면 이동 0.8초(800)
+  //$('#bt>li').eq(count).css({'background-color':'#fff'}).siblings().css({'background-color':'transparent'})
+            $("html,body").stop().animate({scrollTop:moveTop},300); // 속도 1000분의 1초, 1000=1초
+        });
+    });
+}
+//////// scroll 이벤트 ////////////////
+vd_bg_age = 0
+$(window).scroll(function(){
+
+
+  sc = $(window).scrollTop();
+  $('#sc').text(sc);
+
+
+  //////#infection 스크롤 시작 /////////
+  if( sc >=  $('#infection').offset().top &&  sc<$('#characters').offset().top ){
+      
+    infection_scale = Math.round( ((sc-$('#infection').offset().top)/1800)) +2
+    $('#infection h6').text( infection_scale)
+    $('#infection_img>li').eq( infection_scale ).css({'transform':'scale(1.4)','opacity':'1'}).siblings().css({'transform':'scale(1)','opacity':'0.6'})
+
+      $('#infection_img').css({'left':  (sc-$('#infection').offset().top)*-0.42  })
+      $('#infection h1').css({'right': (sc-8000)*-0.7 })
+      $('#infection h2').css({'left': (sc-8000)*-1.4})
+     } 
+          
+   //////#infection 스크롤 끝/////////
+
+   if(  sc >=  $('#vd_bg').offset().top-300 ){
+    vd_bg_age = vd_bg_age + 1
+    if( vd_bg_age == 1 ){     
+      $('#vd_bg>ul>li').eq(0).animate({'marginTop':'0','opacity':'1'},600,'linear')
+      $('#vd_bg>ul>li').eq(1).delay(500).animate({'marginTop':'0','opacity':'1'},600,'linear')
+      $('#vd_bg>ul>li').eq(2).delay(1000).animate({'marginTop':'0','opacity':'1'},600,'linear')
+      $('#vd_bg>ul>li').eq(3).delay(1500).animate({'marginTop':'0','opacity':'1'},600,'linear')
+      $('#vd_bg>ul>li').eq(4).delay(2300).animate({'marginTop':'100px','opacity':'1'},600,'linear')
+      $('#vd_bg>ul>li').eq(5).delay(2800).animate({'marginTop':'0','opacity':'1'},600,'linear')
+      $('#vd_bg>ul>li').eq(6).delay(3500).animate({'marginTop':'100px','opacity':'1'},600,'linear')
+    }
+   }
+   else if(  sc < $('#vd_bg').offset().top-300){
+    vd_bg_age = 0
+    $('#vd_bg>ul>li').stop().css({'margin-top':'100px','opacity':'0'})
+    $('#vd_bg>ul>li:nth-child(5), #vd_bg>ul>li:nth-child(7)').stop().css({'margin-top':'200px','opacity':'0'})
+   }
+
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+    /////////////////////////////
+
+       setInterval(function(){
+        $('.eye_1').animate({'opacity':'1'},300,function(){
+        $('.eye_1').animate({'opacity':'0'},600)
+       })
+       },500)
+       setInterval(function(){
+        $('.eye_2').animate({'opacity':'1'},300,function(){
+        $('.eye_2').animate({'opacity':'0'},600)
+       })
+       },500)
+       setInterval(function(){
+          $('#arrow').animate({'height':'99px'},800,function(){
+          $('#arrow').animate({'height':'79px'},800)
+        })
+       },1700)
+
+
+///////////////////////
+
+$('#main>img:nth-child(9)').animate({'opacity':'1'},200,function(){
+
+        $(' #main>#main_text').animate({'opacity':'1'},500,function(){
+            $(' #main>#main_text').css({'transform':'rotate(-5deg)'}) 
+            $(' #main>#main_text').animate({'opacity':'1'},200,function(){              
+              $(' #main>#main_text').css({'transform':'rotate(8deg) scale(1.2)'}) 
+              $(' #main>#main_text').animate({'opacity':'1'},200,function(){              
+                $(' #main>#main_text').css({'transform':'rotate(2deg) scale(1.7)'})  
+                
+                    $(' #main>h3 ').animate({'fontSize':'30px'},10,function(){
+                      $(' #main>h3 ').delay(100).animate({'fontSize':'40px'},10,function(){ 
+                        $(' #main>h3 ').delay(100).animate({'fontSize':'50px'},10,function(){ 
+                          $(' #main>h3 ').delay(100).animate({'fontSize':'60px'},10)
+                    });  });  });          
+             });
+            });
+        });
+
+$(' #main>h3 ').delay(200).animate({'opacity':'1'},500)
+$(' #blood ').delay(300).animate({'opacity':'1'},500)
+$(' #main>h4 ').delay(300).animate({'opacity':'1'},500)
+
+
+});
+
+
+//////////////
+
+
+      $('#blood').click(function(){
+            $(' #main>h3 ').delay(100).animate({'opacity':'0'},300)
+            $(' #blood ').delay(200).animate({'opacity':'0'},300)
+            $(' #main>h4 ').delay(300).animate({'opacity':'0'},300)
+            $('#main>img:nth-child(9)').animate({'opacity':'0'},300)
+            $(' #main>#main_text').delay(300).animate({'opacity':'0'},300,function(){
+                  $('#main>img:nth-child(2)').animate({'opacity':'1'},200,function(){  
+                  $('#main>img:nth-child(3)').animate({'opacity':'1'},200,function(){
+                  $('#main>img:nth-child(4)').animate({'opacity':'1'},200,function(){
+                  $('#main>img:nth-child(5)').animate({'opacity':'1'},200,function(){
+                  $('#main>img:nth-child(6)').animate({'opacity':'1'},200,function(){
+                  $('#main>img:nth-child(7)').animate({'opacity':'1'},200,function(){
+                  $('#main>img:nth-child(8)').animate({'opacity':'1'},200,function(){
+                  $('#main>img:nth-child(9)').animate({'opacity':'1'},200,function(){
+                    $('#main').animate({top:'-100%'},400)
+                  })
+            });  });  });});});});});});});
+
+    /*  $('#main>img:nth-child(1)').stop().animate({'opacity':'1'},100,function(){
+      $('#main>img:nth-child(2)').animate({'opacity':'1'},200,function(){  
+      $('#main>img:nth-child(3)').animate({'opacity':'1'},200,function(){
+      $('#main>img:nth-child(4)').animate({'opacity':'1'},200,function(){
+      $('#main>img:nth-child(5)').animate({'opacity':'1'},200,function(){
+      $('#main>img:nth-child(6)').animate({'opacity':'1'},200,function(){
+      $('#main>img:nth-child(7)').animate({'opacity':'1'},200,function(){
+      $('#main>img:nth-child(8)').animate({'opacity':'1'},200,function(){
+      $('#main>img:nth-child(9)').animate({'opacity':'1'},200,function(){
+
+          $(' #main>#main_text').animate({'opacity':'1'},500)
+          $(' #main>h3 ').delay(200).animate({'opacity':'1'},500)
+          $(' #blood ').delay(300).animate({'opacity':'1'},500)
+          $(' #main>h4 ').delay(300).animate({'opacity':'1'},500)
+
+
+      }); });});});});});});});});
+
+*/
+
+
+
+    /////////////////////
+    let num = 0;
+         $('#menu_bt').click(function(){
+             if(num == 0){
+                 num = 1
+                 $('#menu_bt>li:nth-child(1)').css({'transform':'rotate(45deg)','top':'7px'})
+                 $('#menu_bt>li:nth-child(2)').hide()
+                 $('#menu_bt>li:nth-child(3)').css({'transform':'rotate(-45deg)','top':'7px'})
+                 $('#menu_popup').stop().animate({'left':'0'},200)
+             }
+             else if(num == 1){
+                num = 0
+                $('#menu_bt>li:nth-child(1)').css({'transform':'rotate(0deg)','top':'0px'})
+                 $('#menu_bt>li:nth-child(2)').show()
+                 $('#menu_bt>li:nth-child(3)').css({'transform':'rotate(0deg)','top':'16px'})
+                 $('#menu_popup').stop().animate({'left':'-100%'},200)
+             }
+            
+         }) 
+         profile_popup_num = 0;
+         $('.right_bt').click(function(){
+           
+          profile_popup_num = profile_popup_num -100
+          if( profile_popup_num <= -900 ){ profile_popup_num = -900 }
+           $('#profile_popup_box>div>.profile_popup').stop().animate({'left':profile_popup_num+'%'},300)
+         })
+         $('.left_bt').click(function(){
+            
+          profile_popup_num = profile_popup_num + 100
+          if( profile_popup_num >= 0  ){ profile_popup_num = 0 }
+         
+           $('#profile_popup_box>div>.profile_popup').stop().animate({'left':profile_popup_num+'%'},300)
+         })
+
+
+        $('#img_bt_1>li').click(function(){
+          profile_popup_num = 0;      
+          $('#profile_popup_box>div>.profile_popup').css({'left':0})
+          //alert(   1  )
+          $('.profile').eq( $(this).index() ).show()
+          $('.profile').eq(  $(this).index() ).siblings('.profile').hide()
+          $(this).css({'opacity':'1'}).siblings().css({'opacity':'0.5'})
+         })
+
+     
+   
+     $('#list>li:nth-child(1)').click(function(){   
+       $(this).children('h3').css({ 'border-bottom':'6px solid #fff'}) 
+       $(this).siblings().children('h3').css({ 'border-bottom':'none'}) 
+       $(this).children('.list_sub').stop().slideDown()
+       $(this).siblings().children('.list_sub').stop().slideUp()
+       $('#leejaegyu').css({'background':'url(the_king.png)no-repeat center fixed'})
+     })   
+     $('#list>li:nth-child(2)').click(function(){
+      $(this).children('h3').css({ 'border-bottom':'6px solid #fff'}) 
+       $(this).siblings().children('h3').css({ 'border-bottom':'none'}) 
+      $(this).children('.list_sub').stop().slideDown()
+      $(this).siblings().children('.list_sub').stop().slideUp()
+       $('#leejaegyu').css({'background':'url(Wrath_of_the_King.png)no-repeat center  fixed'})
+     })    
+     $('#list>li:nth-child(3)').click(function(){
+      $(this).children('h3').css({ 'border-bottom':'6px solid #fff'}) 
+       $(this).siblings().children('h3').css({ 'border-bottom':'none'}) 
+      $(this).children('.list_sub').stop().slideDown()
+      $(this).siblings().children('.list_sub').stop().slideUp()
+       $('#leejaegyu').css({'background':'url(PERFECT_STRANGERS.jpg)no-repeat center  fixed'})
+     })     
+     $('#list_2>li:nth-child(1)').click(function(){      
+      $(this).children('h3').css({ 'border-bottom':'6px solid #fff'}) 
+       $(this).siblings().children('h3').css({ 'border-bottom':'none'}) 
+      $(this).children('.list_sub').stop().slideDown()
+      $(this).siblings().children('.list_sub').stop().slideUp()
+       $('#joodongeun').css({'background':'url(gangsi.jpg)no-repeat center  fixed'})
+     })    
+     $('#list_2>li:nth-child(2)').click(function(){
+      $(this).children('h3').css({ 'border-bottom':'6px solid #fff'}) 
+       $(this).siblings().children('h3').css({ 'border-bottom':'none'}) 
+      $(this).children('.list_sub').stop().slideDown()
+      $(this).siblings().children('.list_sub').stop().slideUp()
+       $('#joodongeun').css({'background':'url(guido.jpg)no-repeat center  fixed'})
+     })   
+     $('#list_2>li:nth-child(3)').click(function(){
+      $(this).children('h3').css({ 'border-bottom':'6px solid #fff'}) 
+       $(this).siblings().children('h3').css({ 'border-bottom':'none'}) 
+      $(this).children('.list_sub').stop().slideDown()
+      $(this).siblings().children('.list_sub').stop().slideUp()
+       $('#joodongeun').css({'background':'url(adonai.jpg)no-repeat center  fixed'})
+     })
+    
+
+
+    $('#profile_popup_close').click(function(){
+           
+      profile_popup_num = 0;      
+      $('#profile_popup_box>div>.profile_popup').css({'left':0})
+      $('#profile_popup').fadeOut(300)
+            $('#mijin>li>img').css({'transform':'scale(1) translate(0px)'})        
+            $('#hari>li>img').css({'transform':'scale(1) translate(0px)'})  
+            $('#woojin>li>img').css({'transform':'scale(1) translate(0px)'})  
+            $('#onjo>li>img').css({'transform':'scale(1) translate(0px)'})  
+            $('#cheongsan>li>img').css({'transform':'scale(1) translate(0px)'})  
+            $('#suhyuk>li>img').css({'transform':'scale(1) translate(0px)'})  
+            $('#namra>li>img').css({'transform':'scale(1) translate(0px)'})  
+            $('#hyoryung>li>img').css({'transform':'scale(1) translate(0px)'})  
+            $('#daesu>li>img').css({'transform':'scale(1) translate(0px)'})  
+
+            $('#mijin_t>img').css({'opacity':'0.7'})
+            $('#hari_t>img').css({'opacity':'0.7'})
+            $('#woojin_t>img').css({'opacity':'0.7'})
+            $('#onjo_t>img').css({'opacity':'0.7'})
+            $('#cheongsan_t>img').css({'opacity':'0.7'})
+            $('#suhyuk_t>img').css({'opacity':'0.7'})
+            $('#namra_t>img').css({'opacity':'0.7'})
+            $('#hyoryung_t>img').css({'opacity':'0.7'})
+            $('#daesu_t>img').css({'opacity':'0.7'})
+    })
+        $('#mijin,#mijin_t').click(function(){  
+            $('#mijin_t>img').css({'opacity':'1'})
+            $('#mijin>li>img').css({'transform':'scale(1.2) translate(0,10px)'})        
+            $('#hari>li>img').css({'transform':'translate(40px)'})  
+            $('#woojin>li>img').css({'transform':'translate(40px)'})  
+            $('#onjo>li>img').css({'transform':'translate(40px)'})  
+            $('#cheongsan>li>img').css({'transform':'translate(40px)'})  
+            $('#suhyuk>li>img').css({'transform':'translate(40px)'})  
+            $('#namra>li>img').css({'transform':'translate(40px)'})  
+            $('#hyoryung>li>img').css({'transform':'translate(40px)'})  
+            $('#daesu>li>img').css({'transform':'translate(40px)'})  
+
+            $('#profile_popup').delay(300).fadeIn(500)
+            $('#mijin>li:nth-child(2),#mijin>li:nth-child(3)').css({'color':'#fff'})
+            $('#profile_popup_slide_wrap1').show()
+            $('#profile_popup_slide_wrap2,#profile_popup_slide_wrap3,#profile_popup_slide_wrap4,#profile_popup_slide_wrap5,#profile_popup_slide_wrap6,#profile_popup_slide_wrap7,#profile_popup_slide_wrap8,#profile_popup_slide_wrap9').hide()
+            $('#profile_popup_textbox>h1').text('Park Mi-jin')
+            $('#profile_popup_textbox>p').text('Mi-jin personality is very brazen, as can be seen by Lee Harim fear of Mi-jin at the time of her  first appearance, but even when there is a disagreement,she follows the majority rule and even if her junior uses informal language and swearing, she doesn t mention it anymore. is one of the last members to survive to the end. A one-man protest is seen with a sign asking for a special zombie screening to be held around the neck. Later, when he and other survivors went to school to find Nam-ra, he revealed that he said he would not do special zombie screening. ')
+        })
+        $('#hari,#hari_t').click(function(){
+            $('#hari_t>img').css({'opacity':'1'})
+            $('#hari>li>img').css({'transform':'scale(1.2) translate(0,10px)'})        
+            $('#mijin>li>img').css({'transform':'translate(-50px)'})  
+            $('#woojin>li>img').css({'transform':'translate(50px)'})  
+            $('#onjo>li>img').css({'transform':'translate(50px)'})  
+            $('#cheongsan>li>img').css({'transform':'translate(50px)'})  
+            $('#suhyuk>li>img').css({'transform':'translate(50px)'})  
+            $('#namra>li>img').css({'transform':'translate(50px)'})  
+            $('#hyoryung>li>img').css({'transform':'translate(50px)'})  
+            $('#daesu>li>img').css({'transform':'translate(50px)'})  
+
+            $('#profile_popup').delay(300).fadeIn(500)
+           $('#hari>li:nth-child(2),#hari>li:nth-child(3)').css({'color':'#fff'})
+           $('#profile_popup_slide_wrap2').show()
+          $('#profile_popup_slide_wrap1,#profile_popup_slide_wrap3,#profile_popup_slide_wrap4, #profile_popup_slide_wrap5,#profile_popup_slide_wrap6,#profile_popup_slide_wrap7, #profile_popup_slide_wrap8,#profile_popup_slide_wrap9').hide()
+            $('#profile_popup_textbox>h1').text('Jang Ha-ri')
+            $('#profile_popup_textbox>p').text('Ha-ri is an archery girl who is a senior at Hyosan High School who is aiming to enter physical education university. Episode 2, on the way back to school after failing in the local preliminary round, appears for the first time in the bus as a public disgrace to the coach. The bus gets caught up in a zombie incident on its way to school. In order to find his younger brother Jang Woo-jin, he and his archery junior Jung Min-jae walk around the school building and shoot at zombies. In the bathroom, he meets Mi-Jin Park and Jun-Sung Yoo, who are confronting Lee Ha-Rim, who has turned into a zombie.')
+        })
+        $('#woojin,#woojin_t').click(function(){
+            $('#woojin_t>img').css({'opacity':'1'})
+            $('#woojin>li>img').css({'transform':'scale(1.2) translate(0,10px)'})        
+            $('#mijin>li>img').css({'transform':'translate(-50px)'})  
+            $('#hari>li>img').css({'transform':'translate(-50px)'})  
+            $('#onjo>li>img').css({'transform':'translate(50px)'})  
+            $('#cheongsan>li>img').css({'transform':'translate(50px)'})  
+            $('#suhyuk>li>img').css({'transform':'translate(50px)'})  
+            $('#namra>li>img').css({'transform':'translate(50px)'})  
+            $('#hyoryung>li>img').css({'transform':'translate(50px)'})  
+            $('#daesu>li>img').css({'transform':'translate(50px)'})  
+
+
+            $('#profile_popup').delay(300).fadeIn(500)
+           $('#woojin>li:nth-child(2),#woojin>li:nth-child(3)').css({'color':'#fff'})
+           $('#profile_popup_slide_wrap3').show()
+          $('#profile_popup_slide_wrap2,#profile_popup_slide_wrap1,#profile_popup_slide_wrap4,#profile_popup_slide_wrap5,#profile_popup_slide_wrap6,#profile_popup_slide_wrap7,#profile_popup_slide_wrap8,#profile_popup_slide_wrap9').hide()
+            $('#profile_popup_textbox>h1').text('Jang Woo-jin')
+            $('#profile_popup_textbox>p').text('Woo-jin has no particular characteristics compared to other male students in Class 5 of the second grade who play parkour between schools or even fight zombies in person. However, it has one of the best qualities in this work. In the last episode, he and the group escaped from school and succeeded in crossing the mountain, but in the ruined downtown of Yangdong-si [3], he was attacked by a horde of zombies and was bitten and infected while protecting his sister.')
+        })
+        $('#onjo,#onjo_t').click(function(){
+            $('#onjo_t>img').css({'opacity':'1'})
+            $('#onjo>li>img').css({'transform':'scale(1.2) translate(0,10px)'})        
+            $('#mijin>li>img').css({'transform':'translate(-50px)'})  
+            $('#hari>li>img').css({'transform':'translate(-50px)'})  
+            $('#woojin>li>img').css({'transform':'translate(-50px)'})  
+            $('#cheongsan>li>img').css({'transform':'translate(50px)'})  
+            $('#suhyuk>li>img').css({'transform':'translate(50px)'})  
+            $('#namra>li>img').css({'transform':'translate(50px)'})  
+            $('#hyoryung>li>img').css({'transform':'translate(50px)'})  
+            $('#daesu>li>img').css({'transform':'translate(50px)'})  
+
+            $('#profile_popup').delay(300).fadeIn(500)
+            $('#onjo>li:nth-child(2),#onjo>li:nth-child(3)').css({'color':'#fff'})
+            $('#profile_popup_slide_wrap4').show()
+            $('#profile_popup_slide_wrap2,#profile_popup_slide_wrap3,#profile_popup_slide_wrap1,#profile_popup_slide_wrap5,#profile_popup_slide_wrap6,#profile_popup_slide_wrap7,#profile_popup_slide_wrap8,#profile_popup_slide_wrap9').hide()
+            $('#profile_popup_textbox>h1').text('Nam On-jo')
+            $('#profile_popup_textbox>p').text('On-jo has an easygoing and pleasant personality. As the main character of a typical zombie movie, he shows a differentiated appearance while showing a carcinogenic character. He lost his best friend Isaac, Kyungsoo, homeroom teacher, and his father, who seemed to be the only family member, and lastly, he was a close friend from kindergarten to Cheongsan, who said he liked him. she is also very considerate, but he comforted Jimin, who knew his parents were dead, and was worried that he might have bad thoughts.')
+        })
+        $('#cheongsan,#cheongsan_t').click(function(){
+            $('#cheongsan_t>img').css({'opacity':'1'})
+            $('#cheongsan>li>img').css({'transform':'scale(1.2) translate(0,10px)'})        
+            $('#mijin>li>img').css({'transform':'translate(-50px)'})  
+            $('#hari>li>img').css({'transform':'translate(-50px)'})  
+            $('#woojin>li>img').css({'transform':'translate(-50px)'})  
+            $('#onjo>li>img').css({'transform':'translate(-50px)'})  
+            $('#suhyuk>li>img').css({'transform':'translate(50px)'})  
+            $('#namra>li>img').css({'transform':'translate(50px)'})  
+            $('#hyoryung>li>img').css({'transform':'translate(50px)'})  
+            $('#daesu>li>img').css({'transform':'translate(50px)'})  
+            $('#profile_popup').delay(300).fadeIn(500)
+           $('#cheongsann>li:nth-child(2),#cheongsan>li:nth-child(3)').css({'color':'#fff'})
+           $('#profile_popup_slide_wrap5').show()
+           $('#profile_popup_slide_wrap2,#profile_popup_slide_wrap3,#profile_popup_slide_wrap4,#profile_popup_slide_wrap1,#profile_popup_slide_wrap6,#profile_popup_slide_wrap7,#profile_popup_slide_wrap8,#profile_popup_slide_wrap9').hide()
+            $('#profile_popup_textbox>h1').text('Lee Cheong-san')
+            $('#profile_popup_textbox>p').text('Cheong-san has excellent speed and athletic ability among the group. As if he had played parkour, there were many scenes of running on walls, climbing pipes, or narrowly avoiding zombies, and at the end, he succeeded in attracting many zombies by himself. In the original, there was no contact point, but in the drama version, Cheong-san and Gwi-nam call each others names when they meet in the principals office, whether they were in the same class before. He appears as an ally with the final boss, Gwi-nam, and that is why he often has trash talk with him.')
+        })
+        $('#suhyuk,#suhyuk_t').click(function(){
+            $('#suhyuk_t>img').css({'opacity':'1'})
+            $('#suhyuk>li>img').css({'transform':'scale(1.2) translate(0,10px)'})        
+            $('#mijin>li>img').css({'transform':'translate(-50px)'})  
+            $('#hari>li>img').css({'transform':'translate(-50px)'})  
+            $('#woojin>li>img').css({'transform':'translate(-50px)'})  
+            $('#onjo>li>img').css({'transform':'translate(-50px)'})  
+            $('#cheongsan>li>img').css({'transform':'translate(-50px)'})  
+            $('#namra>li>img').css({'transform':'translate(50px)'})  
+            $('#hyoryung>li>img').css({'transform':'translate(50px)'})  
+            $('#daesu>li>img').css({'transform':'translate(50px)'})  
+
+            $('#profile_popup').delay(300).fadeIn(500)
+           $('#suhyuk>li:nth-child(2),#suhyuk>li:nth-child(3)').css({'color':'#fff'})
+           $('#profile_popup_slide_wrap6').show()
+           $('#profile_popup_slide_wrap2,#profile_popup_slide_wrap3,#profile_popup_slide_wrap4,#profile_popup_slide_wrap5,#profile_popup_slide_wrap1,#profile_popup_slide_wrap7,#profile_popup_slide_wrap8,#profile_popup_slide_wrap9').hide()
+            $('#profile_popup_textbox>h1').text('Lee Su-hyuk')
+            $('#profile_popup_textbox>p').text('Su-hyuk joined the group of Yoon Gwi-nam until the first grade, but now he washed his hands and broke up with the group of Yoon Gwi-nam. Wake up and get along well with classmates such as Nam On-jo and Lee Cheong-san. Perhaps thats why he is good at fighting, so this character is mostly in charge of using his body.After being bitten by Yoon Gwi-nam, he wrapped around Nam-ra, who was suspected of being infected, and after that, he called Nam-ra, who was immune but had symptoms of cannibalism, and made him come back. tie it up.')
+        })
+        $('#namra,#namra_t').click(function(){
+            $('#namra_t>img').css({'opacity':'1'})
+            $('#namra>li>img').css({'transform':'scale(1.2) translate(0,10px)'})        
+            $('#mijin>li>img').css({'transform':'translate(-50px)'})  
+            $('#hari>li>img').css({'transform':'translate(-50px)'})  
+            $('#woojin>li>img').css({'transform':'translate(-50px)'})  
+            $('#onjo>li>img').css({'transform':'translate(-50px)'})  
+            $('#cheongsan>li>img').css({'transform':'translate(-50px)'})  
+            $('#suhyuk>li>img').css({'transform':'translate(-50px)'})  
+            $('#hyoryung>li>img').css({'transform':'translate(50px)'})  
+            $('#daesu>li>img').css({'transform':'translate(50px)'})  
+            
+            $('#profile_popup').delay(300).fadeIn(500)
+            $('#namra>li:nth-child(2),#namra>li:nth-child(3)').css({'color':'#fff'})
+            $('#profile_popup_slide_wrap7').show()
+            $('#profile_popup_slide_wrap2,#profile_popup_slide_wrap3,#profile_popup_slide_wrap4,#profile_popup_slide_wrap5,#profile_popup_slide_wrap6,#profile_popup_slide_wrap1,#profile_popup_slide_wrap8,#profile_popup_slide_wrap9').hide()
+            $('#profile_popup_textbox>h1').text('Choi Nam-ra')
+            $('#profile_popup_textbox>p').text('Nam-ra is the class president who is the top student in the school. be cool-headed at any moment However, the position of class president was obtained by the power of parents, and he is extremely quiet and has no friends. Although he was trapped in his own wall, he realized his true friendship and changed by sharing the struggle of life and death with his friends.Walking down the hallway, blocking her eyes with a book and her ears with earphones, a zombie appeared and she was the first character to almost die, but Soo-hyeok, who had a crush on her, pulls out Nam-ra and escapes the threshold of early death.')
+        })
+        $('#hyoryung,#hyoryung_t').click(function(){          
+            $('#hyoryung_t>img').css({'opacity':'1'})
+            $('#hyoryung>li>img').css({'transform':'scale(1.2) translate(0,10px) '})        
+            $('#mijin>li>img').css({'transform':'translate(-50px)'})  
+            $('#hari>li>img').css({'transform':'translate(-50px)'})  
+            $('#woojin>li>img').css({'transform':'translate(-50px)'})  
+            $('#onjo>li>img').css({'transform':'translate(-50px)'})  
+            $('#cheongsan>li>img').css({'transform':'translate(-50px)'})  
+            $('#suhyuk>li>img').css({'transform':'translate(-50px)'})  
+            $('#namra>li>img').css({'transform':'translate(-50px)'})  
+            $('#daesu>li>img').css({'transform':'translate(50px)'})  
+
+            $('#profile_popup').delay(300).fadeIn(500)
+             $('#hyoryung>li:nth-child(2),#hyoryung>li:nth-child(3)').css({'color':'#fff'})
+             $('#profile_popup_slide_wrap8').show()
+             $('#profile_popup_slide_wrap2,#profile_popup_slide_wrap3,#profile_popup_slide_wrap4,#profile_popup_slide_wrap5,#profile_popup_slide_wrap6,#profile_popup_slide_wrap7,#profile_popup_slide_wrap1,#profile_popup_slide_wrap9').hide()
+            $('#profile_popup_textbox>h1').text('Seo Hyo-ryung')
+            $('#profile_popup_textbox>p').text('Hyo-ryeong has a timid and emotional personality, and whenever she appears, there are many scenes where she hugs her friend or cries. In the last episode, when they visited Hyosan High School as a group, Onjo, who was with them, looked surprised, but he seemed to have thought that he would not come out because he was scared. There are many scenes of him hugging his friend or crying every time he appears, probably because he has a timid and emotional personality.')
+        })
+        $('#daesu,#daesu_t').click(function(){
+            $('#daesu_t>img').css({'opacity':'1'})
+            $('#daesu>li>img').css({'transform':'scale(1.2) translate(0,10px) '})        
+            $('#mijin>li>img').css({'transform':'translate(-50px)'})  
+            $('#hari>li>img').css({'transform':'translate(-50px)'})  
+            $('#woojin>li>img').css({'transform':'translate(-50px)'})  
+            $('#onjo>li>img').css({'transform':'translate(-50px)'})  
+            $('#cheongsan>li>img').css({'transform':'translate(-50px)'})  
+            $('#suhyuk>li>img').css({'transform':'translate(-50px)'})  
+            $('#namra>li>img').css({'transform':'translate(-50px)'})  
+            $('#hyoryung>li>img').css({'transform':'translate(-50px)'})  
+
+            $('#profile_popup').delay(300).fadeIn(500)
+           $('#daesu>li:nth-child(2),#daesu>li:nth-child(3)').css({'color':'#fff'})
+           $('#profile_popup_slide_wrap9').show()
+         $('#profile_popup_slide_wrap2,#profile_popup_slide_wrap3,#profile_popup_slide_wrap4,#profile_popup_slide_wrap5,#profile_popup_slide_wrap6,#profile_popup_slide_wrap7,#profile_popup_slide_wrap8,#profile_popup_slide_wrap1').hide()
+            $('#profile_popup_textbox>h1').text('Yang Dae-su')
+            $('#profile_popup_textbox>p').text('Dae-su is a comedy character who appears almost unconditionally in dramas and movies in charge of the atmosphere of the play, such as revealing what he eats, causing trouble in the bathroom, and talking nonsense. Still, thanks to his heavy size, he is active when he needs strength. He shows his strength by holding on to the barricade that dozens of zombies are stuck to by himself.It is a setting that is not in the original, and he sings well and likes it, so he goes to auditions. When friends left a video, he sang the song he wrote and composed.')
+        })
+
+   })
+  </script>
+  <style>
+   * { margin: 0; padding: 0; list-style: none; }
+   body,html { height: 100%;}
+   #main { width: 100%; height: 100%; position: fixed; left: 0; top: 0;  background-color: #000; overflow: hidden; z-index: 999999999;  }
+   #main>img { position: absolute; width: 1920px; height: 1080px; left: 50%; top: 50%; margin-left: -980px; margin-top: -540px; opacity: 0;  }
+   #main>h3 { left: 0; top: 560px; bottom: 0; right: 0; margin: auto; position: absolute; color: #7f0303;font-weight: 800; text-align: center; font-size: 20px;font-family: 'Libre Baskerville', serif; font-weight: 300; opacity: 0; transform-origin:50% 100%;}
+   
+   #main>#main_text { width: 506px; height: 192px;top: 350px; left: 0; right: 0;margin: auto; position: absolute; }
+   #main>#blood {width: 330px; height: auto; left: 0; right: 0;top: 680px;margin: auto; position: absolute;z-index: 9999999; cursor: pointer;  }
+   #logo { left: 20px; top: 20px; position: fixed;  z-index: 9999999999;}
+   #fix2 {right: 15px; bottom: 27px; position: fixed;z-index: 99999; }
+   #fix1 {right: 200px; bottom: 20px; position: fixed; z-index: 99999; }
+   #menu_bt { width: 22px; height: 20px;  position: fixed; right: 40px; top: 40px; margin-top: 2px; z-index: 9999999999; cursor: pointer;} 
+   #menu_bt>li:nth-child(1) {width: 22px; height: 2px; background-color: #fff; position: absolute;left: 0; top: 0; transition: 0.2s; }
+    #menu_bt>li:nth-child(2) {width: 22px; height: 2px; background-color: #fff; position: absolute;left: 0; top: 8px;}
+    #menu_bt>li:nth-child(3) {width: 22px; height: 2px; background-color: #fff; position: absolute;left: 0; top: 16px;}
+    #menu_popup { width: 100%; height: 100%; position: fixed; left: -100%; top: 0; background: url(menu_popup_bg.jpg);  z-index: 999999999;}
+    #menu_popup_left { float: left;  margin-top: 200px; margin-left: 20px;font-family: 'Barlow Semi Condensed', sans-serif; font-weight: 500;}
+    #menu_popup_left>li { font-size: 55px; color: #fff; cursor: pointer; line-height: 72px;}
+    #menu_popup_left>li:hover { color: rgb(101, 0, 0); transition: 0.3s;}
+    #menu_popup_right { font-size: 16px; color: #555; text-align: right; margin-top: 150px; position: absolute; right: 30px; top: 100px; }
+    #menu_popup_right>li>span { font-size: 18px; font-weight: 900;}
+    #content_wrap { width: 100%; height:5000px; position: relative; background-color: #000;}
+    #summary_img { width: 100%; height: 5000px; position: relative;   }
+    #summary_img li{ width: 100%; height: 1000px; overflow: hidden; position: relative; cursor: pointer; }
+    #summary_img img { width: 1920px;  }
+    #summary  {  width: 100%; position: absolute; left: 0%; top: 0; overflow: hidden;  }
+    #summary_fixed { width: 1080px;  position:sticky; left: 65%; top: 0; border: 1px solid #fff; }
+    #summary_fixed_2 { position: relative;}
+    #summary_fixed_2 #summary_bg { position: absolute; right: 0; top: 0;  }
+
+    .summary_logo { position: absolute; right: 140px; top:200px; font-size: 60px; color: rgb(146, 146, 146); font-family: 'Fredericka the Great';}
+   .eye_1 { position: absolute; left:460px; top: 350px;width: 38px; opacity: 1;}
+   .eye_2 { position: absolute; left:560px; top: 350px;width: 38px;}
+   .text_box { position: absolute; top: 410px; right: 150px;}
+   .text_box>h2 { font-size: 40px; color: #7f0303;font-family: 'Libre Baskerville', serif; }
+   .text_box>p { width: 430px;margin-top: 20px; color: rgb(92, 92, 92); font-size: 16px;font-family: 'Noto Sans KR', sans-serif; font-weight: 300; line-height: 33px; margin-left: 10px; text-align: justify;}
+   #arrow { width: 16px; height: 79px;  position: absolute; right: 0; top: 240px; background: url(arrow.png) left bottom;}
+   #arrow h6 { color: #999; transform: rotate(-90deg); font-size: 14px;  position: absolute; top:17px; left: -20px;  }
+   
+   #infection { width: 100%;height: 15000px; background-color: #000; position: relative; }
+   #infection_sticky { width:100%; height: 1000px; position: sticky; top:0px; left: 0; overflow: hidden; }
+   #infection_logo {position: absolute; left: 0; right: 0; top: 130px; margin: auto; text-align: center; z-index: 999999999; }
+   #infection_img { width: 9100px; top: 300px; left: 4000px; position: absolute;  }
+   #infection_img>li {width: 550px; float: left; margin-right: 100px; transition: 0.5s; }
+   #infection_img>li>img {width: 550px;}
+   #infection h6 { position: absolute; left: 0; top: 0; font-size: 100px; color: #fff;} 
+   #infection h1 { width: 12000px; font-size: 200px; color: red; position: absolute; right: 4000px; top:270px;  font-family: 'Fredericka the Great'; }
+   #infection h2 {width: 18000px;  font-size: 110px;color: #a70000c5; position: absolute; left: 4000px; top: 480px;font-family: 'Fredericka the Great';}
+   
+   #characters { width: 100%;height: 1000px; background: url(characters_bg.png)no-repeat center; background-size: cover; position: relative; font-family: 'Noto Sans KR', sans-serif;}
+   #characters_wrap { width: 1400px; height: 600px; position: absolute; left: 50%;  top: 50%; margin-left: -700px; margin-top: -470px; }
+   #characters_logo { position: absolute; left: 0; right: 0;top:780px; margin: auto; text-align: center; }
+   #characters_wrap>ul>li>img { transform-origin:50% 100%; transition: 0.3s; }
+   #characters_wrap>ul>li:nth-child(2) { background-color: rgb(115, 26, 39);  color: #ccc; display: inline-block; padding: 5px 10px;}
+   #mijin { width: 150px; height: 400px; float: left; text-align: center; margin-top: 280px; margin-left: 30px; color: #362d28; }
+   #mijin>li {cursor: pointer;}
+   #mijin>li>img { width: 170px; }
+   #mijin>li:nth-child(2) { font-size: 17px; margin-left: 30px; margin-top: 2px;}
+   #hari { width: 144px; height: 400px; float: left; text-align: center; margin-top: 270px; margin-left: 10px;  color: #362d28;}
+   #hari>li {cursor: pointer;}
+   #hari>li>img { width: 170px;}
+   #hari>li:nth-child(2) { font-size: 17px; margin-left: 70px;}
+   #woojin { width: 144px; height: 400px; float: left; text-align: center; margin-top: 210px;margin-left: 20px; color: #362d28; }
+   #woojin>li {cursor: pointer;}
+   #woojin>li>img { width: 125px;}
+   #woojin>li:nth-child(2) { font-size: 17px; margin-top: 1px;  }
+   #onjo { width: 144px; height: 400px; float: left; text-align: center; margin-top: 270px;  color: #362d28; margin-left: -20px;}
+   #onjo>li {cursor: pointer;}
+   #onjo>li>img { width: 110px;}
+   #onjo>li:nth-child(2) { font-size: 17px; margin-top: 4px; }
+   #cheongsan { width: 144px; height: 400px; float: left; text-align: center; margin-top: 200px;margin-left: -10px; color: #362d28;}
+   #cheongsan>li {cursor: pointer;}
+   #cheongsan>li>img { width: 150px;}
+   #cheongsan>li:nth-child(2) { font-size: 17px; margin-top: 10px;}
+   #suhyuk { width: 144px; height: 400px; float: left; text-align: center; margin-top: 203px;margin-left:0px; color: #362d28;}
+   #suhyuk>li {cursor: pointer;}
+   #suhyuk>li>img { width: 120px;}
+   #suhyuk>li:nth-child(2) { font-size: 17px; margin-top: 11px; }
+   #namra { width: 144px; height: 400px; float: left; text-align: center; margin-top: 255px;  color: #362d28; margin-left: -20px;}
+   #namra>li {cursor: pointer;}
+   #namra>li>img { width: 125px;}
+   #namra>li:nth-child(2) { font-size: 17px; margin-top: 1px;}
+   #hyoryung { width: 144px; height: 400px; float: left; text-align: center; margin-top: 250px;  color: #362d28; margin-left:-10px;}
+   #hyoryung>li {cursor: pointer;}
+   #hyoryung>li>img { width: 130px;}
+   #hyoryung>li:nth-child(2) { font-size: 17px; margin-top: 5px; }
+   #daesu{ width: 144px; height: 400px; float: left; text-align: center; margin-top: 203px;margin-left: 0px; color: #362d28;}
+   #daesu>li {cursor: pointer;}
+   #daesu>li>img { width: 170px;}
+   #daesu>li:nth-child(2) { font-size: 17px; margin-left: 40px; margin-top: 1px;}
+   #profile_popup { width: 100%; height: 100%; position: relative; left: 0; top: 0; background-color: rgba(0, 0, 0, 0.904); display: none; }
+   #profile_popup_box { width: 1200px; height: 600px;  position: absolute; top: -50px; left: 0; right: 0;bottom: 0; margin: auto; }
+   #profile_popup_slide_wrap1 { width: 60%;height: 600px; float: left;  vertical-align: top;overflow: hidden; position: relative; display: none;}
+   #profile_popup_slide { width: 1000%; height: 600px; position: absolute;}
+   #profile_popup_slide>li { width: 10%; height: 600px; float: left;}
+   #profile_popup_slide>li>img { width: 100%; }
+   #profile_popup_slide_wrap2 { width: 60%;height: 600px; float: left;  vertical-align: top;overflow: hidden; position: relative; display: none;}
+   #profile_popup_slide2 { width: 1000%; height: 600px; position: absolute;}
+   #profile_popup_slide2>li { width: 10%; height: 600px; float: left;}
+   #profile_popup_slide2>li>img { width: 100%; }
+   #profile_popup_slide_wrap3 { width: 60%;height: 600px; float: left;  vertical-align: top;overflow: hidden; position: relative; display: none;}
+   #profile_popup_slide3 { width: 1000%; height: 600px; position: absolute;}
+   #profile_popup_slide3>li { width: 10%; height: 600px; float: left;}
+   #profile_popup_slide3>li>img { width: 100%; }
+   #profile_popup_slide_wrap4 { width: 60%;height: 600px; float: left;  vertical-align: top;overflow: hidden; position: relative; display: none;}
+   #profile_popup_slide4 { width: 1000%; height: 600px; position: absolute;}
+   #profile_popup_slide4>li { width: 10%; height: 600px; float: left;}
+   #profile_popup_slide4>li>img { width: 100%; }
+   #profile_popup_slide_wrap5 { width: 60%;height: 600px; float: left;  vertical-align: top;overflow: hidden; position: relative; display: none;}
+   #profile_popup_slide5 { width: 1000%; height: 600px; position: absolute;}
+   #profile_popup_slide5>li { width: 10%; height: 600px; float: left;}
+   #profile_popup_slide5>li>img { width: 100%; }
+   #profile_popup_slide_wrap6 { width: 60%;height: 600px; float: left;  vertical-align: top;overflow: hidden; position: relative; display: none;}
+   #profile_popup_slide6 { width: 1000%; height: 600px; position: absolute;}
+   #profile_popup_slide6>li { width: 10%; height: 600px; float: left;}
+   #profile_popup_slide6>li>img { width: 100%; }
+   #profile_popup_slide_wrap7 { width: 60%;height: 600px; float: left;  vertical-align: top;overflow: hidden; position: relative; display: none;}
+   #profile_popup_slide7 { width: 1000%; height: 600px; position: absolute;}
+   #profile_popup_slide7>li { width: 10%; height: 600px; float: left;}
+   #profile_popup_slide7>li>img { width: 100%; }
+   #profile_popup_slide_wrap8 { width: 60%;height: 600px; float: left;  vertical-align: top;overflow: hidden; position: relative; display: none;}
+   #profile_popup_slide8 { width: 1000%; height: 600px; position: absolute;}
+   #profile_popup_slide8>li { width: 10%; height: 600px; float: left;}
+   #profile_popup_slide8>li>img { width: 100%; }
+   #profile_popup_slide_wrap9 { width: 60%;height: 600px; float: left;  vertical-align: top;overflow: hidden; position: relative; display: none;}
+   #profile_popup_slide9 { width: 1000%; height: 600px; position: absolute;}
+   #profile_popup_slide9>li { width: 10%; height: 600px; float: left;}
+   #profile_popup_slide9>li>img { width: 100%; }
+   #profile_popup_textbox { width: 40%;height: 600px; float: right; background-color: #fff; position: relative; padding: 60px; box-sizing: border-box;font-family: 'Libre Baskerville', serif; line-height: 25px;}
+   .left_bt {position: absolute; left: 17px; top: 0; bottom: 0; margin: auto;width: 30px; cursor: pointer;} 
+   .right_bt {position: absolute; right: 17px; top: 0; bottom: 0; margin: auto; cursor: pointer; width: 30px;}
+   #profile_popup_textbox>h1 { margin-bottom: 25px; font-size: 40px;}
+   #profile_popup_textbox>p { font-size: 14px;}
+   #profile_popup_close { position: absolute; right: 10px; top: 10px; cursor: pointer;}
+   #img_bt_1 {width: 380px; position: absolute; left: 0; right: 0; bottom: 30px; margin: auto; }
+   #img_bt_1>li{ width: 60px; height: 60px;  float: left; margin-right: 18px;margin-top: 5px; cursor: pointer;overflow: hidden; }
+   #img_bt_1>li:last-child { margin-right: 0;}
+   #img_bt_1>li>img { height:100%; vertical-align: top; border-radius: 70px; transform: scale(1); transition: 0.5s; opacity: 0.7;}
+   #img_bt_1>li>img:hover {transform: scale(1.05);}
+  
+   #leejaegyu { width: 100%; height: 1000px;background: url(menu_popup_bg.jpg)center no-repeat;position: relative; font-family: 'Libre Franklin', sans-serif;}
+   #leejaegyu>h1 { font-size: 115px; color: #fff; text-align: center; position: absolute;left: 0; right: 0; top: 80px; margin: auto;}
+   #ljg { position: absolute; left: 50px; bottom: 0; width: 300px;}
+   #RepresentativeWork { width: 770px; position: absolute; left: 0; right: 0; bottom: 50px; margin: auto; }
+   #list { text-align: center;}
+   #list>li {margin-bottom: 30px; font-size: 40px;font-family: 'Noto Sans KR', sans-serif; color: #fff; cursor: pointer;}
+   #list>li:last-child { margin-bottom: 0;}
+   #list>li h3 { display: inline-block; position: relative; line-height: 60px; }
+   #list>li h3 span { width: 0%; height: 6px; background-color: #fff; position: absolute; left: 0; right: 0; top:60px; margin: auto; transition: 0.4s; }
+   #list>li:hover h3 span { width: 100%;}
+   .list_sub { font-size: 17px; color: #fff;  display: none;padding: 20px 0;text-align: center;  font-weight: 200;font-family: 'Noto Sans KR', sans-serif; }
+   #joodongeun { width: 100%; height: 1000px; position: relative; background: url(menu_popup_bg.jpg)center no-repeat;}
+   #joodongeun>h1 { font-size: 115px; color: #fff; text-align: center; position: absolute;left: 0; right: 0; top: 80px; margin: auto; font-family: 'Libre Franklin', sans-serif;}
+   #jdg { right: 0px; bottom: 0; position: absolute; width: 500px;}
+   #RepresentativeWork_2 { width: 770px; position: absolute; left: 0; right: 0; bottom: 50px; margin: auto; }
+   #list_2 { text-align: center;}
+   #list_2>li {margin-bottom: 30px; font-size: 40px;font-family: 'Libre Franklin', sans-serif; color: #fff; cursor: pointer;}
+   #list_2>li h3 { display: inline-block; position: relative; line-height: 60px; }
+   #list_2>li h3 span { width: 0%; height: 6px; background-color: #fff; position: absolute; left: 0; right: 0; top:60px; margin: auto; transition: 0.4s; }
+   #list_2>li:hover h3 span { width: 100%;}
+
+   #leejaegyu_bg { width: 100%; height: 100%; position: absolute; left: 0; top: 0; background: url(ljg-bg.png) center fixed;  }  
+   #joodongeun_bg { width: 100%; height: 100%; position: absolute; left: 0; top: 0; background: url(joodonggeun-bg.png) center fixed; }
+
+
+   
+   #webtoon { width: 100%; height: 1000px; background: url(menu_popup_bg.jpg)center no-repeat;position: relative; color: #fff;}
+   #webtoon_slide_wrap { width: 1370px; height: 682px; position: absolute; top: 219px; left: 0; right: 0; margin: auto; }
+   #web_logo { position: absolute; top: -80px; left: 0;right: 0; margin: auto;}
+   
+   
+   #webtoon_slide { width: 1370px; height: 682px; position: absolute; left: 0; right: 0; margin: auto; }
+   #webtoon_slide>li:nth-child(1) { width: 420px; height: 616px; position: absolute; top: 0; bottom: 0; margin: auto; left: 90px; perspective:800px; transition: 0.3s;}
+   #webtoon_slide>li:nth-child(2) { width: 420px; height: 616px; position: absolute; top: 0; bottom: 0; margin: auto; left: 490px; perspective:800px;transition: 0.3s;}
+   #webtoon_slide>li:nth-child(3) { width: 420px; height: 616px; position: absolute; top: 0; bottom: 0; margin: auto; left: 900px; perspective:800px;transition: 0.3s;} 
+   #webtoon_slide>li:nth-child(1) img { transform: rotateY(-20deg) scale(0.8);transition: 0.3s; }
+   #webtoon_slide>li:nth-child(2) img { transform: rotateY(0deg) scale(1);transition: 0.3s; }
+   #webtoon_slide>li:nth-child(3) img { transform: rotateY(20deg) scale(0.8); transition: 0.3s;}
+   #webtoon_slide>li>img { width: 100%;}
+   #webtoon_slide_leftbtn {width: 30px; position: absolute; top:0px; bottom: 0; margin: auto; left: 0px; cursor: pointer;}
+   #webtoon_slide_rightbtn {width: 30px; position: absolute; top:0px; right: 0px; bottom: 0; margin: auto; cursor: pointer;}
+   #webtoon_slide_textbox { width: 350px; height: 180px; position: absolute; top:500px; left:0; right: 0; margin: auto; z-index: 999999;}
+   #webtoon_slide_textbox>h3 {font-family: 'Libre Franklin', sans-serif; font-size: 25px; margin-bottom: 15px;}
+   #webtoon_slide_textbox>p { font-family: 'Libre Franklin', sans-serif; font-size: 18px;}
+   #webtoon_slide_bt { width: 200px; height: 30px;position: absolute; left: 0; right: 0; bottom: -30px; margin: auto;  text-align: center; }
+   #webtoon_slide_bt li { width: 12px; height: 12px; border-radius: 15px; display: inline-block;  margin: 2px; border: 2px solid #fff; transition:width 0.5s; }
+   #webtoon_slide_bt li:nth-child(1) { width: 30px; background-color: #fff;}
+   #webtoon_now { width: 300px; height: 80px; position: absolute; left: 113px; bottom: 50px;}
+   #webtoon_now>button {  color: #fff; font-size: 18px; background-color: rgba(255, 255, 255, 0); border: none; position: absolute; top: 10px; cursor: pointer; }
+   #webtoon_now>img {width: 180px; }
+
+
+   #vd_bg { width: 100%; position: relative; background-color: #000;}
+   #vd_bg2 {width: 100%;height: 800px;  } 
+   #vd_bg>h1 { font-size: 60px; color: #fff; position: absolute; left: 100px;top: 200px; font-family: 'Fredericka the Great';}
+   #vd_bg>ul {width: 500px;  position: absolute; right: 150px; top: 85px;}
+   #vd_bg>ul>li { color: #fff; margin-top: 40px; font-size: 22px;font-family: 'Libre Franklin', sans-serif; line-height: 40px; margin-top: 100px; opacity: 0; }
+   #vd_bg>ul>li:nth-child(5), #vd_bg>ul>li:nth-child(7) { margin-top: 200px;}
+
+   #netflix { width: 100%;height: 1080px; background-color: #000; position: relative; }
+   #net_vd { width: 1920px; height: 1080px; position: absolute; left: 50%; top: 50%; margin-left: -980px; margin-top: -540px; }
+   
+   
+   
+   #cctv {width: 100%;height: 1080px; background-color: #000;position: relative;  font-family: 'Libre Franklin', sans-serif; }
+   #cctv_wrap { width: 1920px; height: 1080px;  position: absolute; left: 50%; top: 50%; margin-left: -980px; margin-top: -540px; }
+   #cctv_bg { position: absolute; left: 0; top: 0;z-index: 9999; }
+   #cctv h2 { position: absolute; left:0; right: 0; margin: auto; top: 140px; font-size: 20px; color: rgb(84, 84, 84); z-index: 99999;font-family: 'Libre Baskerville', serif; text-align: center; letter-spacing:7px; line-height: 40px;}
+   #cctv_1 { width: 450px;position: absolute; left: 200px; top: 322px;}
+   #cctv_2 { width: 450px;position: absolute; left: 620px; top: 326px;}
+   #cctv_3 { width: 450px;position: absolute; left: 952px; top: 325px;}
+   #cctv_4 { width: 450px;position: absolute; left: 1300px; top: 325px;}
+
+   #sc { font-size: 100px; color: #fff; position: fixed; z-index: 10000000000000000; left: 0; top: 0; opacity: 0; }
+   #a { position: relative; width: 100%; height: 1000px;  }
+  </style>
+ </head>
+ <body>
+  <div id="main">
+      <img src="main/1.jpg" alt="" id="main_1">
+      <img src="main/2.jpg" alt="" id="main_2">
+      <img src="main/3.jpg" alt="" id="main_3">
+      <img src="main/4.jpg" alt="" id="main_4">
+      <img src="main/5.jpg" alt="" id="main_5">
+      <img src="main/6.jpg" alt="" id="main_6">
+      <img src="main/7.jpg" alt="" id="main_7">
+      <img src="main/8.jpg" alt="" id="main_8">
+      <img src="main/9.jpg" alt="메인사진" id="main_9">
+      <img src="text.png" alt="메인텍스트" id="main_text">
+      <img src="a1.png" alt="피얼룩" id="blood">
+      <h3>I don't want to die. <br>
+        I don't want to kill you.</h3>
+        <h4></h4>
+  </div>
+      <img src="logo.png" alt="로고" id="logo">
+      <img src="fix1.png" alt="제작사" id="fix1">
+      <img src="fix2.png" alt="제작사" id="fix2">
+      <ul id="menu_bt">
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+      <div id="menu_popup">
+        <ul id="menu_popup_left">
+          <li>SUMMARY</li>
+          <li>INFECTION</li>
+          <li>CHARACTERS</li>
+          <li>DIRECTOR & WRITE</li>
+          <li>WEBTOON</li>
+        </ul>
+        <ul id="menu_popup_right">
+          <li>original series <span>netflix</span></li>
+          <li><span>original release</span>  December18, 2021</li>
+          <li><span>Developed by</span> Studio Drago</li>
+          <li>Genre Drama Horror Apocalyptic</li>
+        </ul>
+      </div>
+      <!-- summary -->
+
+
+
+<div id="content_wrap">                      
+    
+ <!-- -->
+ <div id="summary_fixed">
+  <div id="summary_fixed_2">
+    <img src="sum_bg.png" alt="" id="summary_bg">
+        <h1 class="summary_logo">All of Us Are Dead</h1>
+        <img src="eyes1.png" alt="쥐눈" class="eye_1">
+        <img src="eyes2.png" alt="쥐눈" class="eye_2">
+        <div class="text_box"> 
+          <h2>outbreak of infection</h2>
+          <p>A small accident occurs when a student is bitten by a hamster in the science room of Lee Byung-chan, a science teacher. The wound did not seem to be much, but as time goes by, the  infection caused by the unknown virus spreads and the school is stained with blood.</p>
+          <div id="arrow">
+            <h6>SCROLL</h6>
+          </div>
+  </div>
+</div>
+</div>
+<!-- ---->  
+<div id="summary">
+  <ul id="summary_img">
+  <li class="page"><img src="sm2.png" alt="" id="summary_img_2"></li>
+  <li class="page"><img src="sm1.png" alt="" id="summary_img_1"></li>
+  <li class="page"><img src="sm3.png" alt="" id="summary_img_3"></li>
+  <li class="page"><img src="sm4.png" alt="" id="summary_img_4"></li>
+  <li class="page"><img src="sm5.png" alt="" id="summary_img_5"></li>
+  <li class="page"><img src="sm6.png" alt="" id="summary_img_6"></li> 
+ </ul>  
+</div>     
+                         
+
+  </div>   
+      <!-- summary 끝 -->
+      <!-- infection 시작 -->
+      <div id="infection"> 
+        
+        
+        <div id="infection_sticky">
+          <!-- <h6>0</h6> -->
+          <img src="infection_logo.png" alt="" id="infection_logo">
+          <ul id="infection_img">
+            <li><img src="infection1.png" alt="좀비1"></li>
+            <li><img src="infection2.png" alt="좀비2"></li>
+            <li><img src="infection3.png" alt="좀비3"></li>
+            <li><img src="infection4.png" alt="좀비4"></li>
+            <li><img src="infection5.png" alt="좀비5"></li>
+            <li><img src="infection6.png" alt="좀비6"></li>
+            <li><img src="infection7.png" alt="좀비7"></li>
+            <li><img src="infection8.png" alt="좀비8"></li>
+            <li><img src="infection9.png" alt="좀비9"></li>
+            <li><img src="infection10.png" alt="좀비10"></li>
+            <li><img src="infection11.png" alt="좀비11"></li>
+            <li><img src="infection12.png" alt="좀비12"></li>
+            <li><img src="infection13.png" alt="좀비13"></li>
+            <li><img src="infection14.png" alt="좀비14"></li>
+          </ul>
+        <h1>a symptom of infection a symptom of infectiona symptom of infection a symptom of infection a symptom </h1>
+        <h2>infected people infected people infected people infected people infected people infected people infected people infected people infected people infected people infected people infected people infected people infected people infected people infected people infected people infected people infected people</h2>
+      </div>
+    </div>
+      <!-- infection 끝 -->
+      <div id="characters">
+        <img src="characters_logo.png" alt="지금우리학교는" id="characters_logo">
+        <div id="characters_wrap">
+        <ul id="mijin">
+          <li><img src="1.png" alt="미진"></li>
+          <li>Mi-jin</li>
+        </ul>
+        <ul id="hari">
+          <li><img src="2.png" alt="하리"></li>
+          <li>Ha-ri</li>
+        </ul>
+        <ul id="woojin">
+          <li><img src="3.png" alt="우진"></li>
+          <li>Woo-jin</li>
+        </ul>
+        <ul id="onjo">
+          <li><img src="4.png" alt="온조"></li>
+          <li>On-jo</li>
+        </ul>
+        <ul id="cheongsan">
+          <li><img src="5.png" alt="청산"></li>
+          <li>Cheong-san</li>
+        </ul>
+        <ul id="suhyuk">
+          <li><img src="6.png" alt="수혁"></li>
+          <li>Su-hyuk</li>
+        </ul>
+        <ul id="namra">
+          <li><img src="7.png" alt="남라"></li>
+          <li>Nam-ra</li>
+        </ul>
+        <ul id="hyoryung">
+          <li><img src="8.png" alt="효령"></li>
+          <li>Hyo-ryung</li>
+        </ul>
+        <ul id="daesu">
+          <li><img src="9.png" alt="대수"></li>
+          <li>Dae-su</li>
+        </ul>
+      </div>
+        <div id="profile_popup">
+        <div id="profile_popup_box">
+          <div id="profile_popup_slide_wrap1" class="profile">
+            <ul id="profile_popup_slide" class="profile_popup">
+              <li><img src="mijin.jpg" alt="미진"></li>
+              <li><img src="mijin2.png" alt="미진"></li>
+              <li><img src="mijin3.png" alt="미진"></li>
+              <li><img src="mijin4.png" alt="미진"></li>
+              <li><img src="mijin5.png" alt="미진"></li>
+              <li><img src="mijin6.png" alt="미진"></li>
+              <li><img src="mijin7.png" alt="미진"></li>
+              <li><img src="mijin8.png" alt="미진"></li>
+              <li><img src="mijin9.png" alt="미진"></li>
+              <li><img src="mijin10.png" alt="미진"></li>
+            </ul>
+            <img src="left_bt.png" alt="왼쪽버튼" class="left_bt">
+            <img src="right_bt.png" alt="오른쪽버튼" class="right_bt">
+          </div>
+          <div id="profile_popup_slide_wrap2" class="profile">
+            <ul id="profile_popup_slide2" class="profile_popup">
+              <li><img src="hari.jpg" alt="하리"></li>
+              <li><img src="hari2.png" alt="하리"></li>
+              <li><img src="hari3.png" alt="하리"></li>
+              <li><img src="hari4.png" alt="하리"></li>
+              <li><img src="hari5.png" alt="하리"></li>
+              <li><img src="hari6.png" alt="하리"></li>
+              <li><img src="hari7.png" alt="하리"></li>
+              <li><img src="hari8.png" alt="하리"></li>
+              <li><img src="hari9.png" alt="하리"></li>
+              <li><img src="hari10.png" alt="하리"></li>
+            </ul>
+            <img src="left_bt.png" alt="왼쪽버튼" class="left_bt">
+            <img src="right_bt.png" alt="오른쪽버튼" class="right_bt">
+          </div>
+          <div id="profile_popup_slide_wrap3" class="profile">
+            <ul id="profile_popup_slide3" class="profile_popup">
+              <li><img src="woojin.jpg" alt="우진"></li>
+              <li><img src="woojin2.png" alt="우진"></li>
+              <li><img src="woojin3.png" alt="우진"></li>
+              <li><img src="woojin4.png" alt="우진"></li>
+              <li><img src="woojin5.png" alt="우진"></li>
+              <li><img src="woojin6.png" alt="우진"></li>
+              <li><img src="woojin7.png" alt="우진"></li>
+              <li><img src="woojin8.png" alt="우진"></li>
+              <li><img src="woojin9.png" alt="우진"></li>
+              <li><img src="woojin10.png" alt="우진"></li>
+            </ul>
+            <img src="left_bt.png" alt="왼쪽버튼" class="left_bt">
+            <img src="right_bt.png" alt="오른쪽버튼" class="right_bt">
+          </div>
+          <div id="profile_popup_slide_wrap4" class="profile">
+            <ul id="profile_popup_slide4" class="profile_popup">
+              <li><img src="onjo.jpg" alt="온조"></li>
+              <li><img src="onjo2.png" alt="온조"></li>
+              <li><img src="onjo3.png" alt="온조"></li>
+              <li><img src="onjo4.png" alt="온조"></li>
+              <li><img src="onjo5.png" alt="온조"></li>
+              <li><img src="onjo6.png" alt="온조"></li>
+              <li><img src="onjo7.png" alt="온조"></li>
+              <li><img src="onjo8.png" alt="온조"></li>
+              <li><img src="onjo9.png" alt="온조"></li>
+              <li><img src="onjo10.png" alt="온조"></li>
+            </ul>
+            <img src="left_bt.png" alt="왼쪽버튼" class="left_bt">
+            <img src="right_bt.png" alt="오른쪽버튼" class="right_bt">
+          </div>
+          <div id="profile_popup_slide_wrap5" class="profile">
+            <ul id="profile_popup_slide5" class="profile_popup">
+              <li><img src="cheongsan.jpg" alt="청산"></li>
+              <li><img src="cheongsan2.png" alt="청산"></li>
+              <li><img src="cheongsan3.png" alt="청산"></li>
+              <li><img src="cheongsan4.png" alt="청산"></li>
+              <li><img src="cheongsan5.png" alt="청산"></li>
+              <li><img src="cheongsan6.png" alt="청산"></li>
+              <li><img src="cheongsan7.png" alt="청산"></li>
+              <li><img src="cheongsan8.png" alt="청산"></li>
+              <li><img src="cheongsan9.png" alt="청산"></li>
+              <li><img src="cheongsan10.png" alt="청산"></li>
+            </ul>
+            <img src="left_bt.png" alt="왼쪽버튼" class="left_bt">
+            <img src="right_bt.png" alt="오른쪽버튼" class="right_bt">
+          </div>
+          <div id="profile_popup_slide_wrap6" class="profile">
+            <ul id="profile_popup_slide6" class="profile_popup">
+              <li><img src="suhyuk.jpg" alt="수혁"></li>
+              <li><img src="suhyuk2.png" alt="수혁"></li>
+              <li><img src="suhyuk3.png" alt="수혁"></li>
+              <li><img src="suhyuk4.png" alt="수혁"></li>
+              <li><img src="suhyuk5.png" alt="수혁"></li>
+              <li><img src="suhyuk6.png" alt="수혁"></li>
+              <li><img src="suhyuk7.png" alt="수혁"></li>
+              <li><img src="suhyuk8.png" alt="수혁"></li>
+              <li><img src="suhyuk9.png" alt="수혁"></li>
+              <li><img src="suhyuk10.png" alt="수혁"></li>
+            </ul>
+            <img src="left_bt.png" alt="왼쪽버튼" class="left_bt">
+            <img src="right_bt.png" alt="오른쪽버튼" class="right_bt">
+          </div>
+          <div id="profile_popup_slide_wrap7" class="profile">
+            <ul id="profile_popup_slide7" class="profile_popup">
+              <li><img src="namra.jpg" alt="남라"></li>
+              <li><img src="namra2.png" alt="남라"></li>
+              <li><img src="namra3.png" alt="남라"></li>
+              <li><img src="namra4.png" alt="남라"></li>
+              <li><img src="namra5.png" alt="남라"></li>
+              <li><img src="namra6.png" alt="남라"></li>
+              <li><img src="namra7.png" alt="남라"></li>
+              <li><img src="namra8.png" alt="남라"></li>
+              <li><img src="namra9.png" alt="남라"></li>
+              <li><img src="namra10.png" alt="남라"></li>
+            </ul>
+            <img src="left_bt.png" alt="왼쪽버튼" class="left_bt">
+            <img src="right_bt.png" alt="오른쪽버튼" class="right_bt">
+          </div>
+          <div id="profile_popup_slide_wrap8" class="profile">
+            <ul id="profile_popup_slide8" class="profile_popup">
+              <li><img src="hyoryung.jpg" alt="효령"></li>
+              <li><img src="hyoryung2.png" alt="효령"></li>
+              <li><img src="hyoryung3.png" alt="효령"></li>
+              <li><img src="hyoryung4.png" alt="효령"></li>
+              <li><img src="hyoryung5.png" alt="효령"></li>
+              <li><img src="hyoryung6.png" alt="효령"></li>
+              <li><img src="hyoryung7.png" alt="효령"></li>
+              <li><img src="hyoryung8.png" alt="효령"></li>
+              <li><img src="hyoryung9.png" alt="효령"></li>
+              <li><img src="hyoryung10.png" alt="효령"></li>
+            </ul>
+            <img src="left_bt.png" alt="왼쪽버튼" class="left_bt">
+            <img src="right_bt.png" alt="오른쪽버튼" class="right_bt">
+          </div>
+          <div id="profile_popup_slide_wrap9" class="profile">
+            <ul id="profile_popup_slide9" class="profile_popup">
+              <li><img src="daesu.jpg" alt="대수"></li>
+              <li><img src="daesu2.png" alt="대수"></li>
+              <li><img src="daesu3.png" alt="대수"></li>
+              <li><img src="daesu4.png" alt="대수"></li>
+              <li><img src="daesu5.png" alt="대수"></li>
+              <li><img src="daesu6.png" alt="대수"></li>
+              <li><img src="daesu7.png" alt="대수"></li>
+              <li><img src="daesu8.png" alt="대수"></li>
+              <li><img src="daesu9.png" alt="대수"></li>
+              <li><img src="daesu10.png" alt="대수"></li>
+            </ul>
+            <img src="left_bt.png" alt="왼쪽버튼" class="left_bt">
+            <img src="right_bt.png" alt="오른쪽버튼" class="right_bt">
+          </div>
+          <div id="profile_popup_textbox">
+            <h1>Park Mi-jin</h1>
+            <p> </p>
+            
+            <ul id="img_bt_1">
+              <li id="mijin_t"><img src="mijin_bt.jpg" alt="미진"></li>
+              <li id="hari_t"><img src="hari_bt.jpg" alt="하리"></li>
+              <li id="woojin_t"><img src="woojin_bt.jpg" alt="우진"></li>
+              <li id="onjo_t"><img src="onjo_bt.jpg" alt="온조"></li>
+              <li id="cheongsan_t"><img src="cheongsan_bt.jpg" alt="청산"></li>
+              <li id="suhyuk_t"><img src="suhyuk_bt.jpg" alt="수혁"></li>
+              <li id="namra_t"><img src="namra_bt.jpg" alt="남라"></li>
+              <li id="hyoryung_t"><img src="hyoryung_bt.jpg" alt="효령"></li>
+              <li id="daesu_t"><img src="daesu_bt.jpg" alt="대수"></li>
+            </ul>
+          </div>
+          <img src="close_bt.png" alt="닫기버튼" id="profile_popup_close">
+        </div>
+      </div>
+      </div>
+
+
+      <div id="joodongeun">
+        <h1>REPRESENTATIVE <br>WORK</h1>
+        <div id="joodongeun_bg"></div>
+          <div id="RepresentativeWork_2">
+            <ul id="list_2">
+              <li><h3>2012 Gangsi tempest <span></span></h3>
+                <ul class="list_sub">
+                <li>
+                  gangsi appeared in the camp! <br>
+                  We need to stop even the stinky ones!</li>
+              </ul>
+              </li>
+              <li><h3>2016 Devil's way<span></span></h3>
+                <ul class="list_sub">
+                  <li>The story begins with three men and women driving <br> a van and going somewhere, sitting around a bonfire in the <br>woods and telling Joo-eun the scariest story on the <br> condition that she will keep her promise.</li>
+                </ul>
+              </li>
+              <li><h3>2018 Perfect Strangers<span></span></h3>
+                <ul class="list_sub">
+                  <li>At a couple's meeting after a long time, one proposes a game. <br> The secrets of those who willingly started playing games are <br> revealed through cell phones.
+                    It leads to an unexpected ending <br> that is completely different from the original game proposal.
+                    </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+      </div>
+
+
+      <div id="leejaegyu">
+        <h1>REPRESENTATIVE <br>WORK</h1>
+          <div id="leejaegyu_bg"></div>
+          <div id="RepresentativeWork">
+            <ul id="list">
+              <li><h3>2012 The King Two Hearts<span></span></h3>
+                <ul class="list_sub">
+                <li>A female officer of the North Korean special forces and a South <br> Korean prince who is not a member of heaven and earth <br>
+                  A human melodrama black comedy about the story of overcoming <br> the world's distrust and obstacles and growing love.</li>
+              </ul>
+              </li>
+              <li><h3>2014 Wrath of the King<span></span></h3>
+                <ul class="list_sub">
+                  <li>
+                    Surrounding the king's assassination, the 24 hours of <br> intersecting fates of those who have to live, those who have to kill, <br> and those who have to live begins!</li>
+                </ul>
+              </li>
+              <li><h3>2018 Perfect Strangers<span></span></h3>
+                <ul class="list_sub">
+                  <li>At a couple's meeting after a long time, one proposes a game. <br> The secrets of those who willingly started playing games are <br> revealed through cell phones.
+                    It leads to an unexpected ending <br> that is completely different from the original game proposal.
+                    </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+       
+      </div>
+
+
+
+
+      <div id="webtoon">
+          <div id="webtoon_slide_wrap"> 
+            <img src="web_text.png" alt="" id="web_logo">
+              <ul id="webtoon_slide">
+                <li><img src="webtoon2.jpg" alt=""></li>
+                <li><img src="webtoon1.jpg" alt=""></li>
+                <li><img src="webtoon3.jpg" alt=""></li>
+              </ul>
+              <img src="left_bt.png" alt="" id="webtoon_slide_leftbtn">
+              <img src="right_bt.png" alt="" id="webtoon_slide_rightbtn">
+              <div id="webtoon_slide_textbox">
+                  <h3>ALL OF US ARE DEAD 1</h3>
+                  <p>the first episode 1</p>
+              </div>
+              <ul id="webtoon_slide_bt">
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+          </div>
+          <div id="webtoon_now">
+            <button type="button" onclick="window.open('https://comic.naver.com/webtoon/list?titleId=67235/');">WEBTOON NOW</button>
+            <img src="webtoon_now_img.png" alt="">
+          </div>
+      </div>
+
+
+      <div id="vd_bg">
+         <img src="vd_bg.jpg" alt="" id="vd_bg2">
+        <h1>OFFICIAL <br> VIDEO</h1>
+        <ul>
+          <li>"Everyone will die. Don't have any hope." </li>
+          <li>School turned into a battlefield for survival, and a </li>
+          <li>friend turned into the most dangerous enemy.</li>
+          <li>Can we get out alive together?</li>
+          <li>I don't want to die</li>
+          <li>I don't want to kill.</li>
+          <li>Teen Zombie Survival</li>
+        </ul>
+      </div>
+
+
+      <div id="netflix">
+       
+        <video src="123546.mp4" autoplay loop controls muted id="net_vd"></video>
+      </div>
+
+
+
+     <div id="cctv">
+        <div id="cctv_wrap">
+          <img src="cctv_bg.png" alt="음침한배경" id="cctv_bg">
+          <h2>I don't want to die. <br>
+           I don't want to kill you.</h2>
+          <video src="cctv_2.mp4" autoplay loop controls muted id="cctv_1"></video>
+          <video src="cctv_7.mp4" autoplay loop controls muted id="cctv_2"></video>
+          <video src="cctv_3.mp4" autoplay loop controls muted id="cctv_3"></video>
+          <video src="cctv_1.mp4" autoplay loop controls muted id="cctv_4"></video>
+        </div>
+      
+     </div>
+
+
+
+     <h1 id="sc">0</h1>
+ </body>
+</html>
